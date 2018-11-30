@@ -1,0 +1,29 @@
+#!/bin/bash
+
+COLOR='\033[0;36m'
+DELIMITER='\033[0m'
+
+LAST_CHANGE=$(sha1sum $1)
+
+printf "${COLOR}[$(date +%H:%M:%S)] Compiling file $1 using deno ${DELIMITER}\n\n"
+
+deno $1
+
+printf "\n"
+
+while true
+do
+  CURRENT_CHANGE=$(sha1sum $1)
+
+  if [[ "$CURRENT_CHANGE" != "$LAST_CHANGE" ]]
+  then
+
+    printf "${COLOR}[$(date +%H:%M:%S)] Compiling file $1 using deno ${DELIMITER}\n\n"
+
+    deno $1
+
+    printf "\n"
+
+    LAST_CHANGE=$CURRENT_CHANGE
+  fi
+done
