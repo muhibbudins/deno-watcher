@@ -1,6 +1,6 @@
 # Dewatch
 
-Watching deno file change using bash script — Learn Deno
+Watch & compile typescript file using deno with bash script — Learn Deno
 
 ![Demo](./demo.gif)
 
