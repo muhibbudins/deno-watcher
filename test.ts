@@ -1,5 +1,5 @@
-function multipy(x: number) {
-  return x * 2
+function echo(string: string) {
+  return string
 }
 
-console.log('multipy 2 * 2 = ', multipy(2))
+console.log('Hello World')

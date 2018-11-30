@@ -2,6 +2,8 @@
 
 Watching deno file change using bash script — Learn Deno
 
+![Demo](./demo.gif)
+
 > Currently tested only on OSX 10.12.6
 
 ### Prepare
