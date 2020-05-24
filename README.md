@@ -1,4 +1,10 @@
-# Dewatch
+# Already Archived
+
+This project is already archived, you can use the latest one here https://github.com/muhibbudins/denomon
+
+---
+
+## Dewatch
 
 Watch & compile typescript file using deno with bash script — Learn Deno
 
